@@ -21,6 +21,10 @@ public class App
         myCounter.click();
         myCounter.click();
 
+        myCounter.undo(); //undo counter
+        myCounter.display();
+        myCounter.reset();
+        myCounter.display();
         //TODO - add call to reset() that you implement in Counter class
 
 
@@ -33,6 +37,18 @@ public class App
         // Create a second Counter object, then
         // click() it once, undo() twice, click(), then display()
         // What count do you expect?
+        System.out.println("Bus counter:- ");
+        Counter busCounter = new Counter(12);
+        busCounter.display();
+        busCounter.click();
+        busCounter.click();
+        busCounter.click();
+        busCounter.click();
+        busCounter.click();
+        busCounter.undo();
+        busCounter.display();
+        busCounter.reset();
+        busCounter.display();
 
     }
 
